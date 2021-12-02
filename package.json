@@ -1,0 +1,21 @@
+{
+  "name": "mtsabot",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "ascii-table": "^0.0.9",
+    "common-tags": "^1.8.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.2.0-dev.1632657792.839974c",
+    "dotenv": "^10.0.0",
+    "package": "^1.0.1"
+  },
+  "keywords": [],
+  "description": ""
+}

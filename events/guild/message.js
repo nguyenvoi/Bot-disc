@@ -1,0 +1,15 @@
+module.exports = (client, message) => {
+    const PREFIX = ".";
+
+    if (!message.content.startsWith(PREFIX) || message.author.bot) return;
+
+    const args = message.content.slice(PREFIX.length).split(/[ ]+/);
+    const command = args.shift().toLowerCase();
+    if (!command.length) return;
+
+    const cmd = client.commands.get(command);
+    if (!cmd) return;
+
+    console.log("Ok");
+    cmd.execute(client, message, args, PREFIX);
+}
